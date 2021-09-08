@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:menuCategory="container">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/ic_baseline_today_24"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_note"
+            android:icon="@drawable/ic_baseline_sticky_note_2_24"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/appointment"
+            android:icon="@drawable/ic_baseline_schedule_24"
+            android:title="@string/appointment_menu" />
+        <item
+            android:id="@+id/schedule"
+            android:icon="@drawable/ic_baseline_school_24"
+            android:title="@string/schedule_menu" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/rate_us"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="@string/rate" />
+        <item
+            android:id="@+id/cancel"
+            android:icon="@drawable/ic_baseline_cancel_24"
+            android:title="@string/exit" />
+    </group>
+</menu>

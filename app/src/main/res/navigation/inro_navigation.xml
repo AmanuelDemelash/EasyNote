@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/viewPager">
+
+    <fragment
+        android:id="@+id/viewPager"
+        android:name="com.dmstechsolution.easynote.onbording.ViewPager"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPager_to_bio2"
+            app:destination="@id/bio2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/bio2"
+        android:name="com.dmstechsolution.easynote.onbording.register.Bio"
+        android:label="bio_fragment"
+        tools:layout="@layout/bio_fragment" />
+</navigation>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_schedule"
+            app:destination="@id/schedule"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_todo"
+            app:destination="@id/nav_todo"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_note"
+            app:destination="@id/nav_note"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_home_to_appointment"
+            app:destination="@id/appointment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_home_to_aboutUs"
+            app:destination="@id/aboutUs"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_todo"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.todo.TodoFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_nav_todo_to_addnewTodo"
+            app:destination="@id/addnewTodo"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_todo"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_todo_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_note"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.note.NoteFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_note" >
+        <action
+            android:id="@+id/action_nav_note_to_addnewnote"
+            app:destination="@id/addnewnote"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_note"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_note_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointment"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.appointment.Appointment"
+        android:label="Appointment"
+        tools:layout="@layout/appointment_fragment" >
+        <action
+            android:id="@+id/action_appointment_to_addnewAppointment"
+            app:destination="@id/addnewAppointment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/appointment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_appointment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/schedule"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.schedule.Schedule"
+        android:label="Class Schedule"
+        tools:layout="@layout/schedule_fragment" >
+        <action
+            android:id="@+id/action_schedule_to_addnew_schedule2"
+            app:destination="@id/addnew_schedule2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/schedule"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_schedule_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.about.About"
+        android:label="About"
+        tools:layout="@layout/about_fragment" />
+    <fragment
+        android:id="@+id/information"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.information.Information"
+        android:label="Information"
+        tools:layout="@layout/information_fragment" >
+        <action
+            android:id="@+id/action_information_to_aboutUs"
+            app:destination="@id/aboutUs"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/information"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_information_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addnewnote"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.note.Addnewnote"
+        android:label="Add note"
+        tools:layout="@layout/addnewnote_fragment" >
+        <action
+            android:id="@+id/action_addnewnote_to_nav_note"
+            app:destination="@id/nav_note"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addnewTodo"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.todo.AddnewTodo"
+        android:label="Add Todo"
+        tools:layout="@layout/addnew_todo_fragment" >
+        <action
+            android:id="@+id/action_addnewTodo_to_nav_todo"
+            app:destination="@id/nav_todo"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addnew_schedule2"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.schedule.Addnew_schedule"
+        android:label="Add Schedule"
+        tools:layout="@layout/addnew_schedule_fragment">
+        <action
+            android:id="@+id/action_addnew_schedule2_to_schedule"
+            app:destination="@id/schedule"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addnewAppointment"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.appointment.AddnewAppointment"
+        android:label="Add Appointment"
+        tools:layout="@layout/fragment_addnew_appointment" >
+        <action
+            android:id="@+id/action_addnewAppointment_to_appointment"
+            app:destination="@id/appointment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.dmstechsolution.easynote.dashboard.ui.aboutus.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUs_to_information"
+            app:destination="@id/information"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+</navigation>

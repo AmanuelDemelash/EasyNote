@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Easy Note</string>
+    <string name="title_activity_home">Home</string>
+    <string name="nav_header_title">Easy Note</string>
+    <string name="nav_header_subtitle">All in one activity manager</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Todo</string>
+    <string name="menu_slideshow">Note</string>
+    <string name="wellcome">WellCome</string>
+    <string name="to_easy_note">To Easy Note</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username">UserName</string>
+    <string name="bio">Bio</string>
+    <string name="manage_your_toddo">Manage your</string>
+    <string name="take_your_appointment">Take your</string>
+    <string name="take_your_class_schedule">Take your class</string>
+    <string name="appointment">Appointment</string>
+    <string name="toddo">Todo</string>
+    <string name="schedule">schedule</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
+    <string name="appointment_menu">Appointment</string>
+    <string name="schedule_menu">Class Schedule</string>
+    <string name="title">Title</string>
+    <string name="morning">Morning</string>
+    <string name="afternon">Afternoon</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="navigation_drawer_open">open</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="exit">Exit</string>
+    <string name="todoj">TODO</string>
+
+</resources>
